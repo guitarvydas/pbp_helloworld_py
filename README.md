@@ -48,3 +48,13 @@ At a minimum,
   - the `NAME` variable to match the project name
   - to insert the kick-off argument to the project (if needed)
   
+# UTF-8
+Some of the Part names contain Unicode. 
+
+You may need to enable Unicode before running `make` using this version of PBP.
+
+In Linux/Mac:
+`export PYTHONUTF8=1`
+
+In Windows:
+`set PYTHONUTF8=1`
