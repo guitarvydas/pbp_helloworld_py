@@ -1,53 +1,29 @@
-# pbp-kit
-Basic template for creating a project using PBP.
+# Concurrent Hello World in PBP (Parts Based Programming) - Python version
 
-# Files to Edit
-- `.gitignore`
-- `main.py`
-- `Makefile`
-- `package.json`
-- `README.md`
+This looks very simple, but contains concurrency and parallelism and a way to reason about mevent (message-event) ordering.
 
-## `.gitignore`
-extend with project-specific files to be ignored
-## `main.py`
-import project-specific code and Leaf parts
-## `Makefile`
-modify `NAME` to match that of the project
-## `package.json`
-insert project-specific JS dependencies (if any)
-## `README.md`
-modify to suit project
+2 Parts to make Hello World.
 
-# Files to Preserve (Don't Touch)
-- `pbp/`
-- `PBP.xml`
+A 3rd Part to guarantee ordering of mevents.
 
-## `pbp/`
-The Parts Based Programming Tools, such as `t2t`, `kernel`, `das` and `tas`
-`t2t` means "text to text". A tool for transmogrifying input text into output text. Like REGEX, but more powerful.
-## `PBP.xml`
-Palette of Part symbols for draw.io editor.
 
-# Files to Add
-- `.git` via `git init`
-- project specific files
+# Links
+- https://github.com/guitarvydas/pbp-kit PBP kit template
+- https://github.com/guitarvydas/pbp-helloworld finished project in video
+- https://www.drawio.com Draw.io diagram editor
 
-# Other Tools Needed
-## Draw.io
-Editor for creating Container Parts for the project. Download it from https://drawio.com, or use the online version.
+# Video
+???
 
-# Process
-Create a fresh copy of this template directory.
+# Steps
+- create new project using the pbp-kit template
+- git clone the project locally
+- cd into the new project
+- edit Makefile - change `???` to `helloworld`
+- `make init`
+- open draw.io (see above to download and install) and name the drawing `helloworld`
+- change name of tab to `main` (arbitrary name, but must correspond with argv 3 of python line in Makefile)
 
-At a minimum, 
-- edit `main.py`
-  - import an Leaf parts needed for the project
-  - initialize each Leaf part after creating the template registry `zd.initialize_from_files (...)` and before starting the system `zd.start (...)`
-- edit `Makefile` 
-  - the `NAME` variable to match the project name
-  - to insert the kick-off argument to the project (if needed)
-  
 # UTF-8
 Some of the Part names contain Unicode. 
 
