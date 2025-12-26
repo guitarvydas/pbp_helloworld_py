@@ -34,3 +34,5 @@ In Linux/Mac:
 
 In Windows:
 `set PYTHONUTF8=1`
+
+![API](./pbp/api.md)
